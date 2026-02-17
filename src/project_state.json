@@ -1,0 +1,87 @@
+{
+  "schemaVersion": "1.0.0",
+  "projectStateVersion": 3,
+  "summary": "Create a simple, educational, professional website for Manthan Academy (a coaching institute) featuring teacher Digvijay Karn and offerings for CBSE students, spoken English, and English grammar.",
+  "architectural_notes": [],
+  "known_issues": [],
+  "isFixRequest": false,
+  "imageRequirements": "## Required Images\n- Minimal academic logo mark with book + pen motif, clean vector-like style, transparent background (manthan-academy-logo.dim_512x512.png)\n- Wide classroom/learning themed hero illustration, modern flat style, warm neutral palette (manthan-hero-illustration.dim_1600x700.png)",
+  "existing_features": [
+    {
+      "id": "feature-create-a-simple-educational-professional-marketing-website-for-the-coaching-institute-manthan-academy-with-clear-branding-and-content-in-english",
+      "title": "Create a simple, educational, professional marketing website for the coaching institute “Manthan Academy” with clear branding and content in English.",
+      "reqIds": [
+        "REQ-1"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-implement-a-coherent-visual-theme-and-ui-system-colors-typography-spacing-components-suitable-for-an-educational-institute-and-apply-it-consistently-across-all-pages",
+      "title": "Implement a coherent visual theme and UI system (colors, typography, spacing, components) suitable for an educational institute, and apply it consistently across all pages.",
+      "reqIds": [
+        "REQ-2"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-a-top-navigation-header-and-footer-with-working-internal-links-for-home-about-teacher-courses-and-contact",
+      "title": "Add a top navigation header and footer with working internal links for: Home, About Teacher, Courses, and Contact.",
+      "reqIds": [
+        "REQ-3"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-create-a-home-page-that-introduces-manthan-academy-and-the-main-offerings-cbse-support-spoken-english-english-grammar-with-a-professional-hero-section-and-concise-call-to-action-to-contact",
+      "title": "Create a Home page that introduces Manthan Academy and the main offerings (CBSE support, Spoken English, English Grammar) with a professional hero section and concise call-to-action to contact.",
+      "reqIds": [
+        "REQ-4"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-create-an-about-teacher-page-featuring-the-teacher-profile-name-digvijay-karn-role-as-teacher-at-manthan-academy-and-a-short-professional-bio-focused-on-teaching-cbse-and-english-spoken-grammar",
+      "title": "Create an About Teacher page featuring the teacher profile: name “Digvijay Karn”, role as teacher at Manthan Academy, and a short professional bio focused on teaching CBSE and English (spoken + grammar).",
+      "reqIds": [
+        "REQ-5"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-create-a-courses-page-that-clearly-presents-course-categories-cbse-support-spoken-english-english-grammar-with-brief-descriptions-and-a-simple-structure-cards-sections",
+      "title": "Create a Courses page that clearly presents course categories (CBSE Support, Spoken English, English Grammar) with brief descriptions and a simple structure (cards/sections).",
+      "reqIds": [
+        "REQ-6"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-create-a-contact-page-with-a-simple-contact-section-and-a-basic-contact-form-that-works-without-external-services-e-g-mailto-link-or-on-screen-message-including-placeholders-for-phone-email-address-if-not-provided",
+      "title": "Create a Contact page with a simple contact section and a basic contact form that works without external services (e.g., mailto link or on-screen message), including placeholders for phone/email/address if not provided.",
+      "reqIds": [
+        "REQ-7"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-required-generated-images-as-static-assets-under-frontend-public-assets-generated-and-display-them-in-the-ui-logo-in-header-footer-hero-visual-on-home-about",
+      "title": "Add required generated images as static assets under frontend/public/assets/generated and display them in the UI (logo in header/footer; hero visual on Home/About).",
+      "reqIds": [
+        "REQ-8"
+      ],
+      "version": 1
+    }
+  ],
+  "new_feature_requests": [
+    {
+      "id": "AR-1",
+      "summary": "Build a simple, educational, professional website for Manthan Academy (coaching institute) highlighting teacher Digvijay Karn and courses (CBSE, spoken English, English grammar).",
+      "reqIds": [],
+      "status": "pending"
+    }
+  ],
+  "gameProjectType": "none",
+  "projectName": "Manthan Academy",
+  "clarification_mode": "instant",
+  "clarification_rounds": 0
+}

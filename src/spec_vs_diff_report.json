@@ -1,0 +1,62 @@
+{
+  "kind": "spec_vs_diff_report",
+  "version": "1.0",
+  "generatedAt": "2026-02-17T08:56:35.852Z",
+  "summary": "Most frontend requirements for pages (Home/About/Courses/Contact), consistent theme, and header/footer navigation appear implemented with TanStack Router and shared layout. However, the diff introduces Internet Identity authentication plumbing and actor hooks (explicitly disallowed), and the required generated image asset files themselves are not evidenced as added under the specified public path (only referenced in components).",
+  "missing_requirements": [
+    {
+      "id": "REQ-8",
+      "requirement": "Add required generated images as static assets under frontend/public/assets/generated with specified filenames, and display them in the UI.",
+      "reason": "The UI references the required filenames, but the diff summary does not show the actual image files being added under frontend/public/assets/generated (two added files were omitted due to limits, but their paths/names are not evidenced).",
+      "evidence": [
+        "frontend/src/components/Header.tsx (references /assets/generated/manthan-academy-logo.dim_512x512.png)",
+        "frontend/src/components/Footer.tsx (references /assets/generated/manthan-academy-logo.dim_512x512.png)",
+        "frontend/src/pages/HomePage.tsx (references /assets/generated/manthan-hero-illustration.dim_1600x700.png)",
+        "frontend/src/pages/AboutTeacherPage.tsx (references /assets/generated/manthan-hero-illustration.dim_1600x700.png)"
+      ]
+    }
+  ],
+  "hallucinated_features": [
+    {
+      "description": "Internet Identity / third-party authentication integration (AuthClient, InternetIdentityProvider, identity-based actor creation).",
+      "reason": "BuildRequest explicitly forbids introducing third-party auth and states no student login/portal features; the diff adds Internet Identity auth context and related hooks.",
+      "evidence": [
+        "frontend/src/hooks/useInternetIdentity.ts (imports @dfinity/auth-client; provides login/clear; identity state)",
+        "frontend/src/main.tsx (wraps app with InternetIdentityProvider)",
+        "frontend/src/hooks/useActor.ts (uses identity to create authenticated/anonymous actor)"
+      ]
+    },
+    {
+      "description": "Caffeine.ai attribution link in the footer with UTM parameters.",
+      "reason": "Not requested by the BuildRequest; adds external promotional/attribution link.",
+      "evidence": [
+        "frontend/src/components/Footer.tsx (link to https://caffeine.ai/?utm_source=...)"
+      ]
+    }
+  ],
+  "confidence": 0.78,
+  "changed_files": [
+    "all_files_summary.json",
+    "backend/main.mo",
+    "frontend-file-summaries.txt",
+    "frontend/index.css",
+    "frontend/index.html",
+    "frontend/src/App.tsx",
+    "frontend/src/components/Footer.tsx",
+    "frontend/src/components/Header.tsx",
+    "frontend/src/components/Section.tsx",
+    "frontend/src/components/SiteLayout.tsx",
+    "frontend/src/hooks/useActor.ts",
+    "frontend/src/hooks/useInternetIdentity.ts",
+    "frontend/src/hooks/useQueries.ts",
+    "frontend/src/index.css",
+    "frontend/src/lib/utils.ts",
+    "frontend/src/main.tsx",
+    "frontend/src/pages/AboutTeacherPage.tsx",
+    "frontend/src/pages/ContactPage.tsx",
+    "frontend/src/pages/CoursesPage.tsx",
+    "frontend/src/pages/HomePage.tsx",
+    "frontend/tailwind.config.js",
+    "project_state.json"
+  ]
+}

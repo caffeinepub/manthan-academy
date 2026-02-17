@@ -1,0 +1,177 @@
+{
+  "kind": "build_request",
+  "title": "Manthan Academy Coaching Institute Website",
+  "projectName": "Manthan Academy",
+  "priority": "normal",
+  "requirements": [
+    {
+      "id": "REQ-1",
+      "text": "Create a simple, educational, professional marketing website for the coaching institute “Manthan Academy” with clear branding and content in English.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-2"
+        ],
+        "quotes": [
+          "Create a website for a coaching institute named Manthan Academy... Make the website simple, educational and professional."
+        ]
+      },
+      "acceptanceCriteria": [
+        "The site name “Manthan Academy” is prominently visible in the header and main hero section.",
+        "All user-facing text is in English.",
+        "The design feels educational and professional (no flashy animations required)."
+      ]
+    },
+    {
+      "id": "REQ-2",
+      "text": "Implement a coherent visual theme and UI system (colors, typography, spacing, components) suitable for an educational institute, and apply it consistently across all pages.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-2"
+        ],
+        "quotes": [
+          "Make the website simple, educational and professional."
+        ]
+      },
+      "acceptanceCriteria": [
+        "A consistent color palette and typography are used across the entire site (avoid blue/purple as the primary theme).",
+        "Components (buttons, cards, headings, sections) look uniform across pages.",
+        "Layout is responsive and readable on mobile, tablet, and desktop."
+      ]
+    },
+    {
+      "id": "REQ-3",
+      "text": "Add a top navigation header and footer with working internal links for: Home, About Teacher, Courses, and Contact.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-2"
+        ],
+        "quotes": [
+          "Create a website for a coaching institute named Manthan Academy."
+        ]
+      },
+      "acceptanceCriteria": [
+        "Header navigation is visible on all pages and highlights the current page/state.",
+        "Footer appears on all pages and includes institute name and basic quick links.",
+        "All navigation links work without full page reload issues."
+      ]
+    },
+    {
+      "id": "REQ-4",
+      "text": "Create a Home page that introduces Manthan Academy and the main offerings (CBSE support, Spoken English, English Grammar) with a professional hero section and concise call-to-action to contact.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-2"
+        ],
+        "quotes": [
+          "I teach CBSE students, English spoken, English grammer etc."
+        ]
+      },
+      "acceptanceCriteria": [
+        "Home page includes a hero section with “Manthan Academy” and a short tagline/intro.",
+        "Home page lists the three main offerings: CBSE students, Spoken English, English Grammar.",
+        "A primary call-to-action leads users to the Contact section/page."
+      ]
+    },
+    {
+      "id": "REQ-5",
+      "text": "Create an About Teacher page featuring the teacher profile: name “Digvijay Karn”, role as teacher at Manthan Academy, and a short professional bio focused on teaching CBSE and English (spoken + grammar).",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-2"
+        ],
+        "quotes": [
+          "I am the teacher at Manthan Academy, my name is Digvijay Karn. I teach CBSE students, English spoken, English grammer etc."
+        ]
+      },
+      "acceptanceCriteria": [
+        "The page includes the name “Digvijay Karn” and clearly identifies him as the teacher at Manthan Academy.",
+        "Bio content is concise, professional, and education-focused.",
+        "A section summarizes teaching focus areas (CBSE, Spoken English, English Grammar)."
+      ]
+    },
+    {
+      "id": "REQ-6",
+      "text": "Create a Courses page that clearly presents course categories (CBSE Support, Spoken English, English Grammar) with brief descriptions and a simple structure (cards/sections).",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-2"
+        ],
+        "quotes": [
+          "I teach CBSE students, English spoken, English grammer etc."
+        ]
+      },
+      "acceptanceCriteria": [
+        "Each course category appears as a distinct section/card with a short description.",
+        "Page is scannable and consistent with the site theme.",
+        "Each course section includes a clear prompt to contact/enroll (linking to Contact)."
+      ]
+    },
+    {
+      "id": "REQ-7",
+      "text": "Create a Contact page with a simple contact section and a basic contact form that works without external services (e.g., mailto link or on-screen message), including placeholders for phone/email/address if not provided.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-2"
+        ],
+        "quotes": [
+          "Create a website for a coaching institute named Manthan Academy."
+        ]
+      },
+      "acceptanceCriteria": [
+        "The page includes contact details placeholders (Phone, Email, Address) that can be easily edited later.",
+        "A contact form is present with fields like Name, Phone/Email, Message.",
+        "Submitting the form provides a clear outcome without requiring third-party integrations (e.g., opens mail client via mailto or shows a confirmation message)."
+      ]
+    },
+    {
+      "id": "REQ-8",
+      "text": "Add required generated images as static assets under frontend/public/assets/generated and display them in the UI (logo in header/footer; hero visual on Home/About).",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-2"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Generated images exist under frontend/public/assets/generated with the specified filenames.",
+        "The logo is displayed in the header and footer.",
+        "The hero image is displayed on the Home page (and optionally reused on About) with proper responsive sizing and alt text."
+      ]
+    }
+  ],
+  "constraints": [
+    "Use English for all user-facing text.",
+    "Do not modify files under frontend/src/components/ui or any other immutable paths listed by the system context; compose those components instead.",
+    "Do not introduce external databases or third-party auth; keep the site primarily informational."
+  ],
+  "nonGoals": [
+    "Student login/portal features.",
+    "Online payments or subscriptions.",
+    "Real-time chat, messaging, or push notifications.",
+    "Third-party email services or CRM integrations."
+  ],
+  "imageRequirements": {
+    "required": [
+      "Minimal academic logo mark with book + pen motif, clean vector-like style, transparent background (manthan-academy-logo.dim_512x512.png)",
+      "Wide classroom/learning themed hero illustration, modern flat style, warm neutral palette (manthan-hero-illustration.dim_1600x700.png)"
+    ],
+    "edits": []
+  },
+  "userProfileUpdate": {
+    "goalsToAdd": [],
+    "goalsToRemove": [],
+    "preferencesToAdd": [],
+    "preferencesToRemove": [],
+    "miscToAdd": [],
+    "miscToRemove": [],
+    "fieldsToSet": {},
+    "fieldsToDelete": []
+  }
+}

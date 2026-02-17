@@ -1,0 +1,210 @@
+{
+  "kind": "implementation_plan",
+  "version": "1.0",
+  "title": "Manthan Academy Coaching Institute Website (Frontend)",
+  "requirements": [
+    {
+      "id": "REQ-1",
+      "summary": "Build a simple, educational, professional marketing website for Manthan Academy with English content and clear branding.",
+      "acceptanceCriteria": [
+        "The site name “Manthan Academy” is prominently visible in the header and main hero section.",
+        "All user-facing text is in English.",
+        "The design feels educational and professional (no flashy animations required)."
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/App.tsx",
+          "operation": "create",
+          "description": "Create the top-level app shell with site layout wrapper and route rendering for Home, About Teacher, Courses, and Contact (client-side navigation, no full reloads)."
+        },
+        {
+          "path": "frontend/src/components/SiteLayout.tsx",
+          "operation": "create",
+          "description": "Create a consistent page layout that renders the header, main content container, and footer across all pages using shadcn-ui primitives for a professional baseline. Verify the component's usage instructions before implementing."
+        },
+        {
+          "path": "frontend/index.html",
+          "operation": "modify",
+          "description": "Ensure metadata (title already set to “Manthan Academy”) remains aligned with the institute branding and English language usage."
+        }
+      ]
+    },
+    {
+      "id": "REQ-2",
+      "summary": "Implement and apply a coherent educational visual theme (warm neutral palette, typography, spacing, uniform components) across pages.",
+      "acceptanceCriteria": [
+        "A consistent color palette and typography are used across the entire site (avoid blue/purple as the primary theme).",
+        "Components (buttons, cards, headings, sections) look uniform across pages.",
+        "Layout is responsive and readable on mobile, tablet, and desktop."
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/index.css",
+          "operation": "create",
+          "description": "Add global theme tokens (CSS variables used by Tailwind/shadcn-ui), base typography, and spacing defaults using a warm neutral educational palette (non-blue/purple primary), ensuring consistent styling across the site. Verify the component's usage instructions before implementing."
+        },
+        {
+          "path": "frontend/tailwind.config.js",
+          "operation": "modify",
+          "description": "Adjust/confirm Tailwind theme configuration supports the chosen warm neutral palette and readable typography scale consistently across components and pages (no blue/purple as primary)."
+        },
+        {
+          "path": "frontend/src/components/Section.tsx",
+          "operation": "create",
+          "description": "Create a reusable Section wrapper for consistent page section spacing, headings, and responsive layout; compose with shadcn-ui Card/typography-friendly classes for uniformity. Verify the component's usage instructions before implementing."
+        }
+      ]
+    },
+    {
+      "id": "REQ-3",
+      "summary": "Add a persistent header and footer with internal navigation links to Home, About Teacher, Courses, and Contact (highlight active state).",
+      "acceptanceCriteria": [
+        "Header navigation is visible on all pages and highlights the current page/state.",
+        "Footer appears on all pages and includes institute name and basic quick links.",
+        "All navigation links work without full page reload issues."
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/Header.tsx",
+          "operation": "create",
+          "description": "Implement a top navigation header with logo + “Manthan Academy” brand and internal links (Home, About Teacher, Courses, Contact) using a React router link component and active-state styling; compose with shadcn-ui navigation/button components where appropriate. Verify the component's usage instructions before implementing."
+        },
+        {
+          "path": "frontend/src/components/Footer.tsx",
+          "operation": "create",
+          "description": "Implement a footer displayed on all pages containing the logo, institute name, and quick internal links; compose with shadcn-ui typography/link/button primitives. Verify the component's usage instructions before implementing."
+        },
+        {
+          "path": "frontend/src/App.tsx",
+          "operation": "modify",
+          "description": "Wire Header and Footer into the app layout so they appear on every page and navigation is handled client-side (no full reloads)."
+        }
+      ]
+    },
+    {
+      "id": "REQ-4",
+      "summary": "Create a Home page with professional hero section, intro, offerings (CBSE support, Spoken English, English Grammar), and a primary CTA to Contact.",
+      "acceptanceCriteria": [
+        "Home page includes a hero section with “Manthan Academy” and a short tagline/intro.",
+        "Home page lists the three main offerings: CBSE students, Spoken English, English Grammar.",
+        "A primary call-to-action leads users to the Contact section/page."
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/pages/HomePage.tsx",
+          "operation": "create",
+          "description": "Create the Home page with a hero (including institute name + tagline), a scannable offerings section listing CBSE Support, Spoken English, and English Grammar, and a prominent CTA linking to the Contact page; compose with shadcn-ui Button and Card components. Verify the component's usage instructions before implementing."
+        },
+        {
+          "path": "frontend/src/App.tsx",
+          "operation": "modify",
+          "description": "Register/wire the Home page route and ensure the Home navigation link maps correctly to it."
+        }
+      ]
+    },
+    {
+      "id": "REQ-5",
+      "summary": "Create an About Teacher page featuring Digvijay Karn’s profile, role, concise bio, and teaching focus areas.",
+      "acceptanceCriteria": [
+        "The page includes the name “Digvijay Karn” and clearly identifies him as the teacher at Manthan Academy.",
+        "Bio content is concise, professional, and education-focused.",
+        "A section summarizes teaching focus areas (CBSE, Spoken English, English Grammar)."
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/pages/AboutTeacherPage.tsx",
+          "operation": "create",
+          "description": "Create the About Teacher page featuring “Digvijay Karn”, identifying him as the teacher at Manthan Academy, with a concise professional bio and a clear summary of focus areas (CBSE, Spoken English, English Grammar); compose with shadcn-ui Card and typography-friendly components. Verify the component's usage instructions before implementing."
+        },
+        {
+          "path": "frontend/src/App.tsx",
+          "operation": "modify",
+          "description": "Register/wire the About Teacher route and ensure header/footer navigation links target it correctly."
+        }
+      ]
+    },
+    {
+      "id": "REQ-6",
+      "summary": "Create a Courses page presenting the three course categories with brief descriptions and contact/enroll prompts.",
+      "acceptanceCriteria": [
+        "Each course category appears as a distinct section/card with a short description.",
+        "Page is scannable and consistent with the site theme.",
+        "Each course section includes a clear prompt to contact/enroll (linking to Contact)."
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/pages/CoursesPage.tsx",
+          "operation": "create",
+          "description": "Create the Courses page with three distinct cards/sections for CBSE Support, Spoken English, and English Grammar, each with short descriptions and a consistent “Contact/Enroll” link/button to the Contact page using shadcn-ui Card and Button components. Verify the component's usage instructions before implementing."
+        },
+        {
+          "path": "frontend/src/App.tsx",
+          "operation": "modify",
+          "description": "Register/wire the Courses route and ensure navigation highlights the active state on this page."
+        }
+      ]
+    },
+    {
+      "id": "REQ-7",
+      "summary": "Create a Contact page with editable placeholders for contact details and a basic contact form that works without third-party services.",
+      "acceptanceCriteria": [
+        "The page includes contact details placeholders (Phone, Email, Address) that can be easily edited later.",
+        "A contact form is present with fields like Name, Phone/Email, Message.",
+        "Submitting the form provides a clear outcome without requiring third-party integrations (e.g., opens mail client via mailto or shows a confirmation message)."
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/pages/ContactPage.tsx",
+          "operation": "create",
+          "description": "Create the Contact page with editable placeholders (Phone, Email, Address) and a simple form (Name, Phone/Email, Message) that, on submit, provides an on-screen confirmation and optionally offers a mailto fallback; use shadcn-ui Input/Textarea/Button components (compose only; do not modify ui components). Verify the component's usage instructions before implementing."
+        },
+        {
+          "path": "frontend/src/App.tsx",
+          "operation": "modify",
+          "description": "Register/wire the Contact route and ensure all CTAs and nav links route to Contact without full page reload."
+        }
+      ]
+    },
+    {
+      "id": "REQ-8",
+      "summary": "Add required generated images as static assets and display them (logo in header/footer; hero image on Home/About).",
+      "acceptanceCriteria": [
+        "Generated images exist under frontend/public/assets/generated with the specified filenames.",
+        "The logo is displayed in the header and footer.",
+        "The hero image is displayed on the Home page (and optionally reused on About) with proper responsive sizing and alt text."
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/public/assets/generated/manthan-academy-logo.dim_512x512.png",
+          "operation": "create",
+          "description": "Add the generated logo asset at frontend/public/assets/generated/manthan-academy-logo.dim_512x512.png for use in header/footer branding."
+        },
+        {
+          "path": "frontend/public/assets/generated/manthan-hero-illustration.dim_1600x700.png",
+          "operation": "create",
+          "description": "Add the generated hero illustration asset at frontend/public/assets/generated/manthan-hero-illustration.dim_1600x700.png for use on the Home page hero (and optionally About)."
+        },
+        {
+          "path": "frontend/src/components/Header.tsx",
+          "operation": "modify",
+          "description": "Render the logo image from frontend/public/assets/generated/manthan-academy-logo.dim_512x512.png in the header with appropriate alt text and responsive sizing. Verify the component's usage instructions before implementing."
+        },
+        {
+          "path": "frontend/src/components/Footer.tsx",
+          "operation": "modify",
+          "description": "Render the logo image from frontend/public/assets/generated/manthan-academy-logo.dim_512x512.png in the footer with appropriate alt text and consistent sizing. Verify the component's usage instructions before implementing."
+        },
+        {
+          "path": "frontend/src/pages/HomePage.tsx",
+          "operation": "modify",
+          "description": "Display the hero image from frontend/public/assets/generated/manthan-hero-illustration.dim_1600x700.png within the Home hero section with responsive behavior and meaningful alt text. Verify the component's usage instructions before implementing."
+        },
+        {
+          "path": "frontend/src/pages/AboutTeacherPage.tsx",
+          "operation": "modify",
+          "description": "Optionally reuse the hero image from frontend/public/assets/generated/manthan-hero-illustration.dim_1600x700.png (or a smaller variant presentation) to visually support the About Teacher page while keeping a professional layout and alt text. Verify the component's usage instructions before implementing."
+        }
+      ]
+    }
+  ]
+}

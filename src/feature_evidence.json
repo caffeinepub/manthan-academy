@@ -1,0 +1,162 @@
+{
+  "kind": "feature_evidence_report",
+  "features": [
+    {
+      "featureId": "feature-create-a-simple-educational-professional-marketing-website-for-the-coaching-institute-manthan-academy-with-clear-branding-and-content-in-english",
+      "featureTitle": "Create a simple, educational, professional marketing website for the coaching institute “Manthan Academy” with clear branding and content in English.",
+      "files": [
+        "frontend/index.html",
+        "frontend/src/App.tsx",
+        "frontend/src/components/SiteLayout.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-1"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-implement-a-coherent-visual-theme-and-ui-system-colors-typography-spacing-components-suitable-for-an-educational-institute-and-apply-it-consistently-across-all-pages",
+      "featureTitle": "Implement a coherent visual theme and UI system (colors, typography, spacing, components) suitable for an educational institute, and apply it consistently across all pages.",
+      "files": [
+        "frontend/src/components/Section.tsx",
+        "frontend/src/index.css",
+        "frontend/tailwind.config.js"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-2"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-add-a-top-navigation-header-and-footer-with-working-internal-links-for-home-about-teacher-courses-and-contact",
+      "featureTitle": "Add a top navigation header and footer with working internal links for: Home, About Teacher, Courses, and Contact.",
+      "files": [
+        "frontend/src/App.tsx",
+        "frontend/src/components/Footer.tsx",
+        "frontend/src/components/Header.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-3"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-create-a-home-page-that-introduces-manthan-academy-and-the-main-offerings-cbse-support-spoken-english-english-grammar-with-a-professional-hero-section-and-concise-call-to-action-to-contact",
+      "featureTitle": "Create a Home page that introduces Manthan Academy and the main offerings (CBSE support, Spoken English, English Grammar) with a professional hero section and concise call-to-action to contact.",
+      "files": [
+        "frontend/src/App.tsx",
+        "frontend/src/pages/HomePage.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-4"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-create-an-about-teacher-page-featuring-the-teacher-profile-name-digvijay-karn-role-as-teacher-at-manthan-academy-and-a-short-professional-bio-focused-on-teaching-cbse-and-english-spoken-grammar",
+      "featureTitle": "Create an About Teacher page featuring the teacher profile: name “Digvijay Karn”, role as teacher at Manthan Academy, and a short professional bio focused on teaching CBSE and English (spoken + grammar).",
+      "files": [
+        "frontend/src/App.tsx",
+        "frontend/src/pages/AboutTeacherPage.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-5"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-create-a-courses-page-that-clearly-presents-course-categories-cbse-support-spoken-english-english-grammar-with-brief-descriptions-and-a-simple-structure-cards-sections",
+      "featureTitle": "Create a Courses page that clearly presents course categories (CBSE Support, Spoken English, English Grammar) with brief descriptions and a simple structure (cards/sections).",
+      "files": [
+        "frontend/src/App.tsx",
+        "frontend/src/pages/CoursesPage.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-6"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-create-a-contact-page-with-a-simple-contact-section-and-a-basic-contact-form-that-works-without-external-services-e-g-mailto-link-or-on-screen-message-including-placeholders-for-phone-email-address-if-not-provided",
+      "featureTitle": "Create a Contact page with a simple contact section and a basic contact form that works without external services (e.g., mailto link or on-screen message), including placeholders for phone/email/address if not provided.",
+      "files": [
+        "frontend/src/App.tsx",
+        "frontend/src/pages/ContactPage.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-7"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-add-required-generated-images-as-static-assets-under-frontend-public-assets-generated-and-display-them-in-the-ui-logo-in-header-footer-hero-visual-on-home-about",
+      "featureTitle": "Add required generated images as static assets under frontend/public/assets/generated and display them in the UI (logo in header/footer; hero visual on Home/About).",
+      "files": [
+        "frontend/src/components/Footer.tsx",
+        "frontend/src/components/Header.tsx",
+        "frontend/src/pages/AboutTeacherPage.tsx",
+        "frontend/src/pages/HomePage.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-8"
+      ],
+      "confidence": "high"
+    }
+  ]
+}

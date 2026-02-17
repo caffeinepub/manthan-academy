@@ -1,0 +1,15 @@
+{
+  "frontend/src/App.tsx": "Main application component that sets up TanStack Router with routes for Home, About Teacher, Courses, and Contact pages, all wrapped in the SiteLayout component.",
+  "frontend/src/components/SiteLayout.tsx": "Layout wrapper component that provides consistent structure with Header, main content area (Outlet), and Footer across all pages.",
+  "frontend/src/components/Header.tsx": "Responsive navigation header with logo, site name, and navigation links with active state highlighting; includes mobile menu toggle.",
+  "frontend/src/components/Footer.tsx": "Site footer with branding, quick links, contact information, and attribution including the required caffeine.ai link with UTM parameters.",
+  "frontend/src/components/Section.tsx": "Reusable section wrapper component that provides consistent vertical spacing and container width across all page sections.",
+  "frontend/src/pages/HomePage.tsx": "Home page featuring hero section with Manthan Academy branding, three main course offerings displayed as cards, and call-to-action sections.",
+  "frontend/src/pages/AboutTeacherPage.tsx": "About page showcasing teacher Digvijay Karn with professional bio, credentials, and three focus areas (CBSE, Grammar, Spoken English).",
+  "frontend/src/pages/CoursesPage.tsx": "Courses page displaying three detailed course cards (CBSE Support, Spoken English, English Grammar) with features and enrollment CTAs.",
+  "frontend/src/pages/ContactPage.tsx": "Contact page with contact information cards and a functional form that opens the user's email client with pre-filled message data.",
+  "frontend/src/hooks/useQueries.ts": "Placeholder file for React Query hooks to interact with backend (currently empty as backend has no methods).",
+  "frontend/src/lib/utils.ts": "Utility functions including cn() helper for merging Tailwind CSS classes using clsx and tailwind-merge.",
+  "frontend/src/index.css": "Global styles with OKLCH color system defining warm amber/orange educational palette for both light and dark modes, plus typography defaults.",
+  "frontend/tailwind.config.js": "Tailwind configuration with custom font families (Inter, Poppins), extended color tokens, border radius, shadows, and educational theme customization."
+}
